@@ -27,7 +27,7 @@ const Navbar = () => {
       >
         <Link to={'/'} className='flex items-center gap-2' onClick={() => {window.scrollTo(0,0); setActive('')} } >
           {/* <img src={logo} alt='Logo' className='w-10 h-10 object-contain' /> */}
-          <h1 className='text-[18px] font-bold text-white cursor-pointer flex items-center'>DIRECODES&nbsp;<span className='font-normal hidden sm:block text-[14px]'> | Frontend Engineer&nbsp;</span></h1>
+          <h1 className='text-[18px] font-bold text-white cursor-pointer flex items-center'>DIRECODES&nbsp;<span className='font-normal hidden sm:block text-[14px]'> | Frontend Engineer&nbsp;</span><span className='font-normal hidden md:block text-[14px]'> | Web Designer&nbsp;</span></h1>
         </Link>
         <ul className='list-none hidden sm:flex flex-row gap-10'>
           {navLinks.map((link) =>
@@ -61,7 +61,7 @@ const Navbar = () => {
             initial="hidden"
             animate={toggle ? "hidden" : "visible"}
             exit="exit"
-            className={`${toggle ? 'hidden' : 'flex'} p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}>
+            className={`${toggle ? 'hidden' : 'flex'} p-6 bg-gradient-to-l border border-white from-black to-blue-950 absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}>
               <ul className=' list-none flex justify-end items-start flex-col gap-4 '>
                 {navLinks.map((link) =>
                   <li key={link.id} className={`${active === link.title ? "text-white" : "text-secondary" } hover:text-white text-[16px] font-poppins font-medium`} onClick={() => {setActive(link.title); setToggle(!toggle)}}>
