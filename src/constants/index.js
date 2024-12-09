@@ -11,7 +11,6 @@ import {
     redux,
     tailwind,
     nodejs,
-    mongodb,
     git,
     figma,
     docker,
@@ -54,7 +53,7 @@ import {
       icon: backend,
     },
     {
-      title: "Content Creator",
+      title: "Shopify Developer",
       icon: creator,
     },
   ];
@@ -93,10 +92,6 @@ import {
       icon: nodejs,
     },
     {
-      name: "MongoDB",
-      icon: mongodb,
-    },
-    {
       name: "Three JS",
       icon: threejs,
     },
@@ -109,57 +104,68 @@ import {
       icon: figma,
     },
     {
-      name: "docker",
+      name: "shopify liquid",
       icon: docker,
     },
   ];
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
+      title: "Frontend Developer",
+      company_name: "KONFAMPAY (ECC)",
       icon: starbucks,
       iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      date: "Dec 2022 - Feb 2023",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
+        "Fixed UI bugs and implemented new features for the web application using react with typescript.",
+        "Collaborating with cross-functional teams including designers and other developers to create high-quality products.",
         "Participating in code reviews and providing constructive feedback to other developers.",
+        // "Implementing responsive design and ensuring cross-browser compatibility.",
+      ],
+    },
+    {
+      title: "Frontend Developer",
+      company_name: "AFRIKTV",
+      icon: tesla,
+      iconBg: "#E6DEDD",
+      date: "Mar 2023 - Feb 2022",
+      points: [
+        "Developed several mobile-responsive pages and UI components of the frontend application using Javascript, HeadlessUI, React.js, Tailwind CSS and Material UI. ",
+        "Worked closely with a remote team of 3 engineers and 1 designer to meet the project requirements and desired functionality.",
+        "Implementing responsive design and ensuring cross-browser compatibility.",
+      ],
+    },
+    {
+      title: "Implementation Engineer",
+      company_name: "INTERSWITCH - intern",
+      icon: shopify,
+      iconBg: "#383E56",
+      date: "Aug 2023 - Oct 2023",
+      points: [
+        "Conduct root cause analysis for application and service issues escalated to the implementation team.",
+        "Implement new approaches on test environments for satisfactory testing before implementing on the production environment.",
+        "Proper documentation of changes made to the application and services.",
       ],
     },
     {
       title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
-      iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
-      iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Full stack Developer",
-      company_name: "Meta",
+      company_name: "Stanbic IBTC - Intern",
       icon: meta,
       iconBg: "#E6DEDD",
       date: "Jan 2023 - Present",
+      points: [
+        "Developing and maintaining web applications using React.js and other related technologies.",
+        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+        "Implementing responsive design and ensuring cross-browser compatibility.",
+        "Participating in code reviews and providing constructive feedback to other developers.",
+      ],
+    },
+    {
+      title: "Shopify Developer",
+      company_name: "MyShopDevs",
+      icon: meta,
+      iconBg: "#E6DEDD",
+      date: "Oct 2024 - Present",
       points: [
         "Developing and maintaining web applications using React.js and other related technologies.",
         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
