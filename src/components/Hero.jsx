@@ -25,7 +25,7 @@ const Hero = () => {
         <div>
           <m.h1 initial={{opacity: 0}} animate={{opacity:1}} className={`${styles.heroHeadText}`}>Hi, I&apos;m {' '}
             <span className='text-[#915EFF]'>
-              <Typewriter words={[ 'Owoeye' ,'Temidire']} loop={1} typeSpeed={70} deleteSpeed={50} delaySpeed={1000} onLoopDone={() => {setCursor(false); console.log(cursor)}}  />  
+              <Typewriter words={[ 'Temidire']} loop={1} typeSpeed={70} deleteSpeed={50} delaySpeed={1000} onLoopDone={() => {setCursor(false); console.log(cursor)}}  />  
             </span>
           </m.h1>
           {/* <p className={`${styles.heroSubText} mt-2 text-white-100`}> I develop 3D visuals, user <br className='hidden sm:block'/> interfaces and web applications</p> */}
@@ -33,7 +33,7 @@ const Hero = () => {
           <h1 className={`${styles.heroSubText} mt-2 text-white-100`}>I am a {' '}
             <span style={{ fontWeight: 'bold' }}>
             <div className='w-[300px] inline-block'>
-              <Typewriter words={[ 'Website Developer/Designer', 'Frontend Engineer']} loop={1} cursorStyle='|' typeSpeed={70} deleteSpeed={50} delaySpeed={1000} onLoopDone={() => {setCursor(false); console.log(cursor)}}  />
+              <Typewriter words={[ 'Website Developer', 'Frontend Engineer']} loop={1} cursorStyle='|' typeSpeed={70} deleteSpeed={50} delaySpeed={1000} onLoopDone={() => {setCursor(false); console.log(cursor)}}  />
             </div> <br /> <span className='font-normal'>Skilled with React, Three.js, TailwindCSS, and more.{' '}</span>
               {/* <Typewriter words={[ 'build interactive web experiences.', 'develop websites', 'develop web applications']} loop={5} cursor cursorStyle='_' typeSpeed={70} deleteSpeed={50} delaySpeed={1000} onLoopDone={handleDone} onType={handleType} /> */}
         </span>
