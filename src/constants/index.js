@@ -14,14 +14,15 @@ import {
     git,
     figma,
     docker,
-    meta,
-    starbucks,
-    tesla,
     shopify,
-    carrent,
-    jobit,
-    tripguide,
     threejs,
+    ecc,
+    afriktv,
+    interswitch,
+    stanbic,
+    turningways,
+    whossy,
+    temidire,
   } from "../assets";
   
   export const navLinks = [
@@ -49,12 +50,12 @@ import {
       icon: mobile,
     },
     {
-      title: "Backend Developer",
-      icon: backend,
+      title: "React Developer",
+      icon: creator,
     },
     {
       title: "Shopify Developer",
-      icon: creator,
+      icon: backend,
     },
   ];
   
@@ -113,22 +114,22 @@ import {
     {
       title: "Frontend Developer",
       company_name: "KONFAMPAY (ECC)",
-      icon: starbucks,
-      iconBg: "#383E56",
+      icon: ecc,
+      iconBg: "#ffffff",
       date: "Dec 2022 - Feb 2023",
       points: [
         "Fixed UI bugs and implemented new features for the web application using react with typescript.",
         "Collaborating with cross-functional teams including designers and other developers to create high-quality products.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Participating in code reviews with other developers.",
         // "Implementing responsive design and ensuring cross-browser compatibility.",
       ],
     },
     {
       title: "Frontend Developer",
       company_name: "AFRIKTV",
-      icon: tesla,
+      icon: afriktv,
       iconBg: "#E6DEDD",
-      date: "Mar 2023 - Feb 2022",
+      date: "Mar 2023 - July 2023",
       points: [
         "Developed several mobile-responsive pages and UI components of the frontend application using Javascript, HeadlessUI, React.js, Tailwind CSS and Material UI. ",
         "Worked closely with a remote team of 3 engineers and 1 designer to meet the project requirements and desired functionality.",
@@ -138,7 +139,7 @@ import {
     {
       title: "Implementation Engineer",
       company_name: "INTERSWITCH - intern",
-      icon: shopify,
+      icon: interswitch,
       iconBg: "#383E56",
       date: "Aug 2023 - Oct 2023",
       points: [
@@ -150,27 +151,24 @@ import {
     {
       title: "React Native Developer",
       company_name: "Stanbic IBTC - Intern",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
+      icon: stanbic,
+      iconBg: "#ffffff",
+      date: "Mar 2024 - Aug 2024",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Debugging and optimizing applications to improve performance and ensure smooth operation on various devices.",
+        "Participating in regular testing and debugging to ensure app stability and reliability.",
+        "Learnt how to write clean, maintainable code and adhering to best practices for mobile development.",
       ],
     },
     {
       title: "Shopify Developer",
       company_name: "MyShopDevs",
-      icon: meta,
+      icon: shopify,
       iconBg: "#E6DEDD",
       date: "Oct 2024 - Present",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Developing and maintaining Shopify e-commerce stores, including custom themes and third-party app integrations.",
+        "Customizing Shopify themes using Liquid, HTML, CSS, and JavaScript to meet client specifications",
       ],
     },
   ];
@@ -178,42 +176,42 @@ import {
   const testimonials = [
     {
       testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
+        "Working with Dire was very nice. I was impressed by his problem-solving skills and attention to detail",
+      name: "Joshua Adeyemo",
+      designation: "Software Engineer",
+      company: "Stanbic",
       image: "https://randomuser.me/api/portraits/women/4.jpg",
     },
     {
       testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
+        "I've never met a web developer who truly cares about the success of a completed project like Dire does.",
+      name: "Opemipo Disu",
+      designation: "Developer",
+      company: "AfrikTV",
       image: "https://randomuser.me/api/portraits/men/5.jpg",
     },
     {
       testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
-      company: "456 Enterprises",
+        "He demonstrated exceptional creativity, a strong commitment to ensuring the project's success.",
+      name: "Davies",
+      designation: "Backend Engineer",
+      company: "Migranium",
       image: "https://randomuser.me/api/portraits/women/6.jpg",
     },
   ];
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Digital Church",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Web-based application designed to connect users with churches. Users can view church services, events, and sermons, and make donations.",
       tags: [
         {
           name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "chart.js",
           color: "green-text-gradient",
         },
         {
@@ -221,20 +219,21 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: turningways,
+      source_code_link: "https://github.com/turning-ways/TurningWaysDigitalChurch",
+      site_link: "https://www.turningways.com/",
     },
     {
-      name: "Job IT",
+      name: "Whossy",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "A modern dating web application designed to connect like-minded individuals based on shared interests, values, and other compatibility factors.",
       tags: [
         {
           name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "firebase",
           color: "green-text-gradient",
         },
         {
@@ -242,29 +241,30 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: whossy,
+      source_code_link: "https://github.com/Transcend-Agency/whossy-web-app",
+      site_link: "https://whossy-web-app-staging.vercel.app/",
     },
     {
-      name: "Trip Guide",
+      name: "Temidire",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "A web-based design showcasing my expertise in web design and web application development. The site is built using React, Tailwind CSS, and three.js.",
       tags: [
         {
-          name: "nextjs",
+          name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "tailwind",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "three.js",
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: temidire,
+      source_code_link: "https://github.com/Temi-Dire/Portfolio",
     },
   ];
   

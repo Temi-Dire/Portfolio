@@ -38,7 +38,7 @@ const About = () => {
         <h2 className={styles.sectionHeadText}>Overview. </h2>
       </m.div>
       <m.p variants={fadeIn("", "", 0.1, 1)} className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'>
-        I&apos;m a passionate Frontend Developer with expertise in TypeScript, JavaScript, React, and Three.js. I have hands-on experience with tools like GitHub and Azure, enabling me to create efficient, scalable, and interactive web applications. 
+        I&apos;m a passionate Frontend Developer with expertise in TypeScript, JavaScript, React, and Three.js. I have hands-on experience with tools like GitHub and Vercel, enabling me to create efficient, scalable, and interactive web applications. 
         As a quick learner with strong communication skills, I excel in collaborative environments and adapt swiftly to new technologies. Let&apos;s work together so I can contribute to bringing your wonderful ideas to life!
       </m.p>
       <div className='mt-20 flex flex-wrap gap-10'>

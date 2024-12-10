@@ -1,5 +1,6 @@
 import { Tilt } from "react-tilt";
 import { motion as m } from 'framer-motion';
+import { FaLink } from "react-icons/fa6";
 
 import { styles } from "../styles";
 import { github } from "../assets";
@@ -9,13 +10,17 @@ import { fadeIn, textVariant } from "../utils/motion";
 
 import PropTypes from "prop-types";
 
-const ProjectCard = ({index, name, description, tags, image, source_code_link}) => {
+const ProjectCard = ({index, name, description, tags, image, source_code_link, site_link}) => {
   return (
     <m.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <Tilt options={{max: 45, scale: 1, speed: 450}} className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'>
-        <div className="w-full relative h-[230px]">
-          <img src={image} alt={name} className="w-full h-full object-cover rounded-2xl"/>
-          <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
+        <div className="w-full relative h-[200px]">
+          <img src={image} alt={name} className="w-full h-full rounded-2xl"/>
+          <div className="absolute inset-0 flex justify-end gap-x-2 m-3 card-img_hover">
+            <div onClick={() => window.open(site_link, "_blank")} 
+              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer">
+              <FaLink className="text-white text-[20px]" />
+            </div>
             <div onClick={() => window.open(source_code_link, "_blank")} 
             className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer">
               <img src={github} className="w-1/2 h-1/2 object-contain" alt="github" />
@@ -46,6 +51,7 @@ ProjectCard.propTypes = {
   description: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
   source_code_link: PropTypes.string.isRequired,
+  site_link: PropTypes.string.isRequired,
   tags: PropTypes.arrayOf(PropTypes.object).isRequired
 };
 

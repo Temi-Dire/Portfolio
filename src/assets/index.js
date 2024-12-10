@@ -30,11 +30,24 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
+import ecc from "./ecc.svg";
+import afriktv from "./afrik.png";
+import interswitch from "./interswitch.svg";
+import stanbic from "./stanbic.jpeg";
+import turningways from "./turningways.png";
+import digitalchurch from "./digital-church.png";
+import whossy from "./whossy.png";
+import temidire from "./temidire.png";
+
 export {
   logo,
   backend,
   creator,
   mobile,
+  ecc,
+  afriktv,
+  interswitch,
+  stanbic,
   web,
   github,
   menu,
@@ -42,15 +55,19 @@ export {
   css,
   docker,
   figma,
+  temidire,
   git,
   html,
+  whossy,
   javascript,
   mongodb,
   nodejs,
   reactjs,
   redux,
   tailwind,
+  digitalchurch,
   typescript,
+  turningways,
   threejs,
   meta,
   shopify,
