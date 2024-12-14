@@ -6,6 +6,7 @@ import { styles } from "../styles"
 import { EarthCanvas } from "./canvas"
 import { SectionWrapper } from "../hoc"
 import { slideIn } from "../utils/motion"
+import toast from "react-hot-toast"
 
 // template_lyd8fo8
 // service_tgktqel
@@ -29,6 +30,12 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
 
+    if (!form.name || !form.email || !form.message) {
+      setLoading(false);
+      toast.error('Please fill all fields');
+      return;
+    }
+
     emailjs.send('service_tgktqel', 'template_lyd8fo8', {
       from_name: form.name,
       to_name: 'Temidire',
@@ -39,7 +46,7 @@ const Contact = () => {
     'ByxRuse2NM1sQ9O57'
   ).then(() => {
       setLoading(false);
-      alert('Thank you. I will get back to you as soon as possible.');
+      toast.success('Thank you. I will get back to you as soon as possible.');
       setForm({ name: '', email: '', message: '' });
   }, (error) => {setLoading(false); alert('An error occurred. Please try again later.'); console.log(error)});
   };

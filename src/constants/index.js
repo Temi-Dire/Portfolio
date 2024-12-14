@@ -17,7 +17,6 @@ import {
     shopify,
     threejs,
     ecc,
-    afriktv,
     interswitch,
     stanbic,
     turningways,

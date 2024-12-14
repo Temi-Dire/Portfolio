@@ -1,6 +1,7 @@
 import { BrowserRouter } from 'react-router-dom'
 import { About ,Contact, Experience, Feedbacks, Hero, Navbar, StarsCanvas, Tech, Works } from './components'
 import Preloader from './components/Preloader'
+import { Toaster } from 'react-hot-toast'
 
 function App() {
 
@@ -22,6 +23,16 @@ function App() {
           <StarsCanvas />
         </div>
       </div>
+      <Toaster
+        position="top-center"
+        toastOptions={{
+          style: {
+            maxWidth: "1000px",
+            fontSize: "16px",
+          },
+          duration: 1500,
+        }}
+      />
     </BrowserRouter>
   )
 }
